@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesignAlley.ResendOtp"
+               xmlns:local="clr-namespace:DesignAlley"
+             BackgroundColor="White"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <Image Source="designbackground.png" Aspect="AspectFill"/>
+
+                <StackLayout Margin="0,30,0,0">
+                    <StackLayout>
+                       
+                        
+                        <StackLayout Spacing="20"  Margin="0,0,0,0" Padding="15" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                            <Frame x:Name="frame1" IsVisible="true" CornerRadius="5"  BackgroundColor="#EEEEEE" Padding="5" Margin="5">
+                                <local:MyEntry  Text="" Keyboard="Numeric" MaxLength="1" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                            </Frame>
+                            <Frame x:Name="frame2" IsVisible="true" CornerRadius="5"  BackgroundColor="#EEEEEE" Padding="5" Margin="5">
+                                <local:MyEntry Text="" Keyboard="Numeric" MaxLength="1" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                            </Frame>
+                            <Frame x:Name="frame3" IsVisible="true" CornerRadius="5"  BackgroundColor="#EEEEEE" Padding="5" Margin="5">
+                                <local:MyEntry  Text="" Keyboard="Numeric" MaxLength="1" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                            </Frame>
+                            <Frame x:Name="frame4" IsVisible="true" CornerRadius="5" BackgroundColor="#EEEEEE" Padding="5" Margin="5">
+                                <local:MyEntry Text="" Keyboard="Numeric" MaxLength="1" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                            </Frame>
+                            <Frame x:Name="frame5" IsVisible="true" CornerRadius="5" BackgroundColor="#EEEEEE" Padding="5" Margin="5">
+                                <local:MyEntry Text="" Keyboard="Numeric" MaxLength="1" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" />
+                            </Frame>
+                        </StackLayout>
+                        <Button TextColor="Black" x:Name="mybutton" Text="Resend OTP" HeightRequest="40" Margin="0,35,0,0" CornerRadius="10" WidthRequest="380"  BackgroundColor="#C8B6A6" VerticalOptions="Center" HorizontalOptions="Center" />
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Image Source="bottombackgrounddesign.png" Margin="0,110,0,0" Aspect="AspectFill"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
